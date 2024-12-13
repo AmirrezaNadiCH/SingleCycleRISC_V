@@ -1,0 +1,36 @@
+# Compile of Datapath.v was successful with warnings.
+# Compile of testbenches.v was successful with warnings.
+# Compile of Controller.v was successful.
+# Compile of RISC_V.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.RISC_V_TB
+# vsim work.RISC_V_TB 
+# Start time: 18:41:12 on Dec 11,2024
+# Loading work.RISC_V_TB
+# Loading work.RISC_V
+# Loading work.Datapath
+# Loading work.ProgramCounter
+# Loading work.InstructionMemory
+# Loading work.RegisterFile
+# Loading work.MUX
+# Loading work.ALU
+# Loading work.DataMemory
+# Loading work.ImmediateExtension
+# Loading work.Adder
+# Loading work.Controller
+add wave -position insertpoint  \
+sim:/RISC_V_TB/UUT/DPTH/DMEM/dataMem
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ACER  Hostname: DESKTOP-UCM1HS5  ProcessID: 6980
+#           Attempting to use alternate WLF file "./wlft1vcwh1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1vcwh1
+# (vsim-4077) Logging very large object: /RISC_V_TB/UUT/DPTH/DMEM/dataMem
+run -all
+# ** Note: $stop    : F:/UT/Current/Digital Systems 2/Computer Assignments/CA2/testbenches.v(123)
+#    Time: 1 us  Iteration: 0  Instance: /RISC_V_TB
+# Break in Module RISC_V_TB at F:/UT/Current/Digital Systems 2/Computer Assignments/CA2/testbenches.v line 123
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 19:09:47 on Dec 11,2024, Elapsed time: 0:28:35
+# Errors: 0, Warnings: 4
